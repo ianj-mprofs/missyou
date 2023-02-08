@@ -11,10 +11,15 @@ html {
     font-size: 14px;
 }
 
+.btn-primary:hover {
+    background-color: #ff3779;
+    border-color: #ff3779;
+}
+
 .hero {
     padding: 2rem 1rem;
     padding-bottom: 20rem;
-    background: linear-gradient(180deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 50%, rgba(232,114,161,0) 70%), url(./missyou-mobile.jpg);
+    background: linear-gradient(180deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 50%, rgba(232,114,161,0) 70%), url(/assets/images/marketing/missyou23/missyou-mobile.jpg);
     background-position: 50% 100%;
     background-size: 100vw auto;
     background-repeat: no-repeat;
@@ -27,17 +32,53 @@ html {
 
 .callout {
     padding: 2rem 1rem;
-    background: linear-gradient(180deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 40%, rgba(232,114,161,0) 60%), url(./valentines-mobile.jpg);
+    background: linear-gradient(180deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 40%, rgba(232,114,161,0) 60%), url(/assets/images/marketing/missyou23/valentines-mobile.jpg);
     background-position: 50% 100%;
     background-size: 100vw auto;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+    opacity: 1;
+}
+
+.from-top {
+    transform: translateY(-50%);
+}
+
+.from-left {
+    transform: translateX(-50%);
+}
+
+.from-right {
+    transform: translateX(50%);
+}
+
+.from-left, .from-right, .from-top {
+    opacity: 0;
+    transition: opacity 400ms ease-in, transform 400ms ease-in;
+}
+
+.from-left.appear, .from-right.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.from-top.appear{
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 @media screen and (min-width:576px) {
     .hero {
-        background: linear-gradient(0deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 40%, rgba(232,114,161,0) 50%), url(./missyou-mobile.jpg);
+        background: linear-gradient(0deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 40%, rgba(232,114,161,0) 50%), url(/assets/images/marketing/missyou23/missyou-mobile.jpg);
         background-position: 50% 0%;
         background-size: 100vw auto;
         background-repeat: no-repeat;
@@ -45,7 +86,7 @@ html {
     }
     
     .callout {
-        background: linear-gradient(180deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 25%, rgba(232,114,161,0) 50%), url(./valentines-mobile.jpg);
+        background: linear-gradient(180deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 25%, rgba(232,114,161,0) 50%), url(/assets/images/marketing/missyou23/valentines-mobile.jpg);
         background-position: 50% 100%;
         background-size: 100vw auto;
         background-repeat: no-repeat;
@@ -60,7 +101,7 @@ html {
 
     .hero {
         padding: 2rem 1rem;
-        background: linear-gradient(90deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 30%, rgba(232,114,161,0) 40%), url(./missyou-tablet.jpg);
+        background: linear-gradient(90deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 30%, rgba(232,114,161,0) 40%), url(/assets/images/marketing/missyou23/missyou-tablet.jpg);
         background-position: 100% 50%;
         background-size: contain;
         background-repeat: no-repeat;
@@ -68,7 +109,7 @@ html {
     }
 
     .callout {
-        background: linear-gradient(270deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 40%, rgba(232,114,161,0) 60%), url(./valentines-tablet.jpg);
+        background: linear-gradient(270deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 40%, rgba(232,114,161,0) 60%), url(/assets/images/marketing/missyou23/valentines-tablet.jpg);
         background-position: 0% 50%;
         background-size: contain;
         background-repeat: no-repeat;
@@ -82,14 +123,14 @@ html {
     }
 
     .hero {
-        background: linear-gradient(90deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 50%, rgba(232,114,161,0) 60%), url(./missyou-tablet.jpg);
+        background: linear-gradient(90deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 50%, rgba(232,114,161,0) 60%), url(/assets/images/marketing/missyou23/missyou-tablet.jpg);
         background-position: 100% 50%;
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .callout {
-        background: linear-gradient(270deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 40%, rgba(232,114,161,0) 60%), url(./valentines.jpg);
+        background: linear-gradient(270deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 40%, rgba(232,114,161,0) 60%), url(/assets/images/marketing/missyou23/valentines.jpg);
         background-position: 0% 50%;
         background-size: contain;
         background-repeat: no-repeat;
@@ -98,14 +139,14 @@ html {
 
 @media screen and (min-width:1200px) {
     .hero {
-        background: linear-gradient(90deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 50%, rgba(232,114,161,0) 60%), url(./missyou.jpg);
+        background: linear-gradient(90deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 50%, rgba(232,114,161,0) 60%), url(/assets/images/marketing/missyou23/missyou.jpg);
         background-position: 100% 50%;
         background-size: contain;
         background-repeat: no-repeat;
     }
 
     .callout {
-        background: linear-gradient(270deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 55%, rgba(232,114,161,0) 70%), url(./valentines.jpg);
+        background: linear-gradient(270deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 55%, rgba(232,114,161,0) 70%), url(/assets/images/marketing/missyou23/valentines.jpg);
         background-position: 0% 50%;
         background-size: contain;
         background-repeat: no-repeat;
@@ -114,7 +155,7 @@ html {
 
 @media screen and (min-width:1600px) {
     .callout {
-        background: linear-gradient(270deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 70%, rgba(232,114,161,0) 80%), url(./valentines.jpg);
+        background: linear-gradient(270deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 70%, rgba(232,114,161,0) 80%), url(/assets/images/marketing/missyou23/valentines.jpg);
         background-position: 0% 50%;
         background-size: contain;
         background-repeat: no-repeat;
