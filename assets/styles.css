@@ -1,0 +1,81 @@
+:root {
+    --jay-blue: #00549a;
+    --mp-fuchsia: #d61c5b;
+    --mp-tang: #f9763d;
+    --mp-light-blue: #dee5f0;
+    --mp-slate-grey: #b0aeb2;
+    --pink: #e872a1;
+}
+
+html {
+    font-size: 14px;
+}
+
+.hero {
+    padding-top: 200px !important;
+    background: linear-gradient(0deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 65%, rgba(232,114,161,0) 80%), url(./missyou-mobile.jpg);
+    background-position: 50% 0%;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+}
+
+.hero p, .callout p {
+    font-size: 1.25rem;
+}
+
+.callout {
+    padding-bottom: 400px !important;
+    background: linear-gradient(180deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 40%, rgba(232,114,161,0) 60%), url(./valentines-mobile.jpg);
+    background-position: 50% 100%;
+    background-size: 100vw auto;
+    background-repeat: no-repeat;
+}
+
+
+@media screen and (min-width:576px) {
+    .hero {
+        padding-top: 300px !important;
+        background: linear-gradient(0deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 55%, rgba(232,114,161,0) 70%), url(./missyou-mobile.jpg);
+        background-position: 50% 0%;
+        background-size: 100vw auto;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width:768px) {
+    html {
+        font-size: 15px;
+    }
+
+    .hero {
+        padding-top: initial !important;
+        background: linear-gradient(0deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 55%, rgba(232,114,161,0) 70%), url(./missyou-mobile.jpg);
+        background-position: 50% 0%;
+        background-size: 100vw auto;
+        background-repeat: no-repeat;
+    }
+
+    .callout {
+        padding-bottom: initial !important;
+        background: linear-gradient(270deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 75%, rgba(232,114,161,0) 85%), url(./valentines.jpg);
+        background-position: 0% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (min-width:992px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:1330px) {
+    .hero {
+        background: linear-gradient(90deg, rgba(232,114,161,1) 0%, rgba(232,114,161,1) 50%, rgba(232,114,161,0) 60%), url(./missyou.jpg);
+        background-position: 100% 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-height: 60vh;
+    }
+}
